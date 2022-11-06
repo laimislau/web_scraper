@@ -5,5 +5,9 @@ class Recipe(BaseModel):
     recipe_link: str
     recipe_image_link: str
     making_time: str
-    ingredients: str
-    making_steps: str
+    recipe_ingredients: str
+    recipe_making_steps: str
+
+
+class RecipeLink(BaseModel):
+    url: str
