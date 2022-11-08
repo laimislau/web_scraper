@@ -23,8 +23,7 @@ class Receptai15min(BaseScraper):
             all_recipe_divs = recipes_list_div.find_all("div", class_="list-row")        
             for recipe_div in all_recipe_divs:                
                 recipe_link = recipe_div.find("a").get("href")
-                results.append(RecipeLink(url = recipe_link))                
-                results.append(RecipeLink[])
+                results.append(RecipeLink(url = recipe_link))
 
         return results
 
